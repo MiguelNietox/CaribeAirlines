@@ -1,0 +1,40 @@
+.login-title{
+	-fx-text-fill: #615b5b;
+	-fx-font-size: 50px;
+}
+
+
+.loginPane{
+	-fx-background-color: rgba(255,255,255,0.30);
+	-fx-background-radius: 20;
+	-fx-effect: dropshadow(gaussian, white, 2px, 0, 0, 0);
+}
+
+.text-border{
+	-fx-stroke: black;
+	-fx-font-size: 20px;
+	-fx-fill:#615b5b;
+}
+
+.fieldsText{
+	-fx-background-color:white;
+	-fx-background-radius:20px;
+	-fx-border-radius:20px;
+	-fx-pref-height:40px;
+	-fx-pref-width:253px;
+}
+
+.btn-login{
+	-fx-border-color:white;
+	-fx-background-color:transparent;
+	-fx-background-radius:20px;
+	-fx-border-radius:20px;
+	-fx-text-fill: #615b5b;
+}
+
+.btn-login:hover {
+  -fx-background-color:#1B75BB;
+  -fx-border-color:transparent;
+  	-fx-text-fill: white;
+
+}

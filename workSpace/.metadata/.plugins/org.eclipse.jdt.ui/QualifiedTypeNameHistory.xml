@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javafx.application.Application"/>
+<fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
+<fullyQualifiedTypeName name="javafx.stage.Stage"/>
+<fullyQualifiedTypeName name="javafx.scene.Scene"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+<fullyQualifiedTypeName name="javafx.animation.FadeTransition"/>
+<fullyQualifiedTypeName name="javafx.animation.TranslateTransition"/>
+<fullyQualifiedTypeName name="javafx.util.Duration"/>
+<fullyQualifiedTypeName name="javafx.animation.Interpolator"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.ClienteViewController"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.AdministradorViewController"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.aplication.Aplicacion"/>
+</qualifiedTypeNameHistroy>

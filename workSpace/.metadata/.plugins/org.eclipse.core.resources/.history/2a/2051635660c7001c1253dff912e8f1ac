@@ -1,0 +1,32 @@
+.loginTitle{
+	-fx-font-size: 50px;
+	-fx-text-fill: #FFFFFF;
+}
+
+
+.loginPane{
+	-fx-background-color: rgba(255,255,255,0.30);
+	-fx-background-radius: 20;
+	-fx-effect: dropshadow(0 8px 32px 0, rgb(31, 38, 135), 50, 0.6, 0, 0);
+	-fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 15);
+
+}
+
+.fieldsText{
+	-fx-background-color:white;
+	-fx-background-radius:20px;
+	-fx-border-radius:20px
+}
+
+.btn-iniciarSesion{
+	-fx-background-color:#1B75BB;
+	-fx-background-radius:20px;
+	-fx-border-radius:20px;
+	-fx-text-fill: #FFFFFF;
+}
+.btn-registrar{
+	-fx-background-color:#D0D3D4;
+	-fx-background-radius:20px;
+	-fx-border-radius:20px;
+	-fx-text-fill: #FFFFFF;
+}
