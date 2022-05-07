@@ -1,0 +1,31 @@
+.fondo-cliente{
+	-fx-background-color:#28A7EA;
+
+}
+
+.list-viajes{
+	-fx-background-color: rgba(255,255,255,0.30);
+	-fx-effect: dropshadow(gaussian, white, 2px, 0, 0, 0);
+	-fx-background-radius: 20;
+
+}
+
+.text-filtro{
+	-fx-font-size: 20px;
+}
+
+.fields-filtro{
+	-fx-background-color:white;
+	-fx-background-radius:20px;
+	-fx-border-radius:20px;
+	-fx-pref-height:40px;
+	-fx-pref-width:308px;
+}
+
+.pane-viaje{
+
+	-fx-background-color:#1B75BB;
+	-fx-background-radius:10px;
+	-fx-border-radius:10px;
+
+}

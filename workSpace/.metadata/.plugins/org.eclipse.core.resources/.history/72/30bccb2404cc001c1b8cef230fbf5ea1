@@ -1,0 +1,22 @@
+.fondo-equipaje{
+	-fx-background-image: url("../images/equipajeAvion.png");
+}
+
+.fondo-embarque{
+	-fx-background-image: url("../images/enbarqueAvion.png");
+}
+
+.carro-equipaje{
+	-fx-background-image: url("../images/carrito.png");
+}
+
+.tab-admin{
+	-fx-background-color:#1B75BB;
+	-fx-text-fill: white;
+}
+
+.tab1-admin:selected{
+	-fx-background-color:white;
+	-fx-text-fill:#1B75BB;
+}
+

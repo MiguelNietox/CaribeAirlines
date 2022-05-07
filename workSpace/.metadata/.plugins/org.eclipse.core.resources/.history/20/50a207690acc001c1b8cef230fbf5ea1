@@ -1,0 +1,45 @@
+.fondo-equipaje{
+	-fx-background-image: url("../images/equipajeAvion.png");
+}
+
+.fondo-embarque{
+	-fx-background-image: url("../images/enbarqueAvion.png");
+}
+
+.carro-equipaje{
+	-fx-background-image: url("../images/carrito.png");
+}
+
+.tab-admin{
+
+	-fx-background-color:white;
+	-fx-text-fill:#1B75BB;
+}
+
+.tab-admin:selected{
+	-fx-background-color:#1B75BB;
+	-fx-text-fill: white;
+}
+
+.pane-info{
+	-fx-background-color: rgba(40,167,234,0.70);
+	-fx-background-radius: 8;
+	-fx-effect: dropshadow(gaussian, white, 2px, 0, 0, 0);
+}
+
+.btn-admin{
+	-fx-border-color:white;
+	-fx-background-color:transparent;
+	-fx-background-radius:5px;
+	-fx-border-radius:5px;
+	-fx-text-fill: white;
+	-fx-pref-height:48px;
+	-fx-pref-width:138px;
+}
+
+.btn-admin:hover {
+  -fx-background-color:#1B75BB;
+  -fx-border-color:transparent;
+  	-fx-text-fill: white;
+
+}

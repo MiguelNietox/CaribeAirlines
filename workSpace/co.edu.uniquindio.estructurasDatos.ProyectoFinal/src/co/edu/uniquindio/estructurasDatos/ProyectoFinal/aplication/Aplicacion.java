@@ -5,6 +5,7 @@ import java.io.IOException;
 import co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.AdministradorViewController;
 import co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.ClienteViewController;
 import co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.LoginViewController;
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.model.Usuario;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -23,7 +24,7 @@ public class Aplicacion extends Application {
 	public  void start(Stage primaryStage) throws Exception {
 
 		this.stage = primaryStage;
-		this.stage.setTitle("Marketplace Online");
+		this.stage.setTitle("Aerolinia");
 
 		mostrarVentanaLogin();
 	}
@@ -53,7 +54,7 @@ public class Aplicacion extends Application {
 			loginViewController.setAplicacion(this);
 
 			Scene scene = new Scene(rootLayout);
-			scene.getStylesheets().add(getClass().getResource("../aplication/application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("../styles/loginView.css").toExternalForm());
 			stage.setScene(scene);
 			stage.show();
 
@@ -67,8 +68,9 @@ public class Aplicacion extends Application {
 
 	/**
 	 * Este metodo muestra la interface de login de la aplicacion
+	 * @param usuario
 	 */
-	public void mostrarVentanaCliente() {
+	public void mostrarVentanaCliente(Usuario usuario) {
 
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -80,7 +82,7 @@ public class Aplicacion extends Application {
 			clienteViewController.setAplicacion(this);
 
 			Scene scene = new Scene(rootLayout);
-		//	scene.getStylesheets().add(getClass().getResource("../aplication/application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("../styles/clienteView.css").toExternalForm());
 			stage.setScene(scene);
 			stage.show();
 
@@ -94,8 +96,9 @@ public class Aplicacion extends Application {
 
 	/**
 	 * Este metodo muestra la interface de login de la aplicacion
+	 * @param usuario
 	 */
-	public void mostrarVentanaAdministrador() {
+	public void mostrarVentanaAdministrador(Usuario usuario) {
 
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -107,7 +110,7 @@ public class Aplicacion extends Application {
 			administradorViewController.setAplicacion(this);
 
 			Scene scene = new Scene(rootLayout);
-			//scene.getStylesheets().add(getClass().getResource("../aplication/application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("../styles/administradorView.css").toExternalForm());
 			stage.setScene(scene);
 			stage.show();
 

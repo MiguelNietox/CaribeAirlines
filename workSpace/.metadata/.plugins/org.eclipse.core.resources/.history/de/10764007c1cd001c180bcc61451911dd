@@ -1,0 +1,60 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers;
+
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.model.Aerolinea;
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.model.Usuario;
+
+public class LoginController {
+
+	//Atributos de la clase LoginController
+
+		ModelFactoryController modelFactoryController;
+		Aerolinea aerolinea;
+
+
+		//-------------------------------------------------------------Constructor-de-la-Clase------------------------------------------------------------
+
+		/**
+		 * Este es el metodo constructor de la clase LoginController
+		 * @param modelFactoryController
+		 */
+		public LoginController(ModelFactoryController modelFactoryController) {
+			this.modelFactoryController = modelFactoryController;
+			aerolinea = modelFactoryController.getAerolinea();
+		}
+
+		//--------------------------------------------------------------Metodos-Sets-Y-Gets---------------------------------------------------------------
+
+		/**
+		 * Este metodo permite obtener el valor del atributo marketOnline de la clase ModelFactoryController
+		 * @return el valor del atributo marketOnline
+		 */
+		public Aerolinea getMarketOnline() {
+			return aerolinea;
+		}
+
+		/**
+		 * Este metodo permite modificar el valor del atributo marketOnline de la clase ModelFactoryController
+		 * @param marketOnline
+		 */
+		public void setMarketOnline(Aerolinea aerolinea) {
+			this.aerolinea = aerolinea;
+		}
+
+
+		public Usuario obtenerUsuario(String nombreUsuario) {
+			return modelFactoryController.obtenerUsuario(nombreUsuario);
+		}
+
+		public boolean verificarUsuario(String nombreUsuario, String contrasenia) {
+			return modelFactoryController.verificarUsuario(nombreUsuario,contrasenia);
+		}
+
+		public void guardarDatos() {
+			modelFactoryController.guardarDatos();
+		}
+
+		public Usuario registrarNuevoUsuario(String tipoUsuario, String nombreUsuario, String contrasenia) {
+
+			return modelFactoryController.registrarNuevoUsuario(tipoUsuario,nombreUsuario,contrasenia);
+		}
+}

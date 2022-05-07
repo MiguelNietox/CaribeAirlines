@@ -1,0 +1,6 @@
+.check-box{
+	-fx-border-style: solid none solid solid;
+    -fx-border-width: 20;
+    -fx-border-color: red;
+    -fx-background-color:white;
+}

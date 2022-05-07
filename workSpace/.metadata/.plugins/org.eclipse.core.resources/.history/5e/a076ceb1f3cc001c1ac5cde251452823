@@ -1,0 +1,34 @@
+.check-box{
+	-fx-border-style: solid none solid solid;
+    -fx-border-width: 5px, 0px, 5px, 5px;
+    -fx-border-color: green;
+    -fx-background-color:green;
+}
+
+.img-asientos-avion{
+	-fx-background-image: url(" ../images/asientosAvion.png")
+}
+
+.pane-info-asiento{
+	-fx-background-color: rgba(255,255,255,0.30);
+	-fx-background-radius: 20;
+	-fx-effect: dropshadow(gaussian, white, 2px, 0, 0, 0);
+}
+
+.btn-tiquete{
+	-fx-border-color:#1B75BB;
+	-fx-background-color:white;
+	-fx-background-radius:5px;
+	-fx-border-radius:5px;
+	-fx-text-fill: #1B75BB;
+	-fx-pref-height:48px;
+	-fx-pref-width:220px;
+	-fx-font-size: 20px;
+}
+
+.btn-tiquete:hover {
+  -fx-background-color:#1B75BB;
+  -fx-border-color:transparent;
+  	-fx-text-fill: white;
+
+}

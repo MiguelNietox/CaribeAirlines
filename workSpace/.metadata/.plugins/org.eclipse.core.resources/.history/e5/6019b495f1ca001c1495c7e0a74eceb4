@@ -1,0 +1,32 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers;
+
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.aplication.Aplicacion;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
+public class ClienteViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private Button btnInfoViaje;
+
+    @FXML
+    void infoViajeAction(ActionEvent event) {
+
+    }
+    public void setAplicacion(Aplicacion aplicacion) {
+
+
+	}
+}
+

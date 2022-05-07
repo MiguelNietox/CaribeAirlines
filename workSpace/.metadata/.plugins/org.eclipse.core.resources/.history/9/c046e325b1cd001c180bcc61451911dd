@@ -1,0 +1,5 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.excepciones;
+
+public class UsuarioException extends Exception {
+
+}

@@ -1,0 +1,55 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.model;
+
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.excepciones.UsuarioException;
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.librerias.ListaSimple;
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.librerias.Nodo;
+
+public class Aerolinea {
+
+	ListaSimple<Usuario> listaUsuarios = new ListaSimple<Usuario>();
+
+	public Usuario obtenerUsuario(String nombreUsuario) {
+
+		for (int i = 0; i < listaUsuarios.getTamanio(); i++) {
+
+			Usuario usuario = listaUsuarios.obtenerValorNodo(i);
+
+			if(usuario.getNombreUsuario().equals(nombreUsuario)){
+				return usuario;
+			}
+		}
+        return null;
+	}
+
+	public boolean verificarUsuario(String nombreUsuario, String contrasenia) {
+
+		for (int i = 0; i < listaUsuarios.getTamanio(); i++) {
+
+			Usuario usuario = listaUsuarios.obtenerValorNodo(i);
+
+			if(usuario.getNombreUsuario().equals(nombreUsuario)){
+				if(usuario.getContraseñaUsuario().equals(contrasenia)){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	public Usuario registrarUsuario(String tipoUsuario, String nombreUsuario, String contrasenia) throws UsuarioException {
+
+		Usuario usuario = obtenerUsuario(nombreUsuario);
+		Usuario nuevoUsuario = new Usuario();
+
+		nuevoUsuario.setTipoUsuario(tipoUsuario);
+		nuevoUsuario.setNombreUsuario(nombreUsuario);
+		nuevoUsuario.setContraseñaUsuario(contrasenia);
+
+		if(usuario != null){
+			throw new UsuarioException("Ya existe un usuario con nombre:"+nombreUsuario);
+
+		}else{
+			return nuevoUsuario;
+		}
+	}
+}

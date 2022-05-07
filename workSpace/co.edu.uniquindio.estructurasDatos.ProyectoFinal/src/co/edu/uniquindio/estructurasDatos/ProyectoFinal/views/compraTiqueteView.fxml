@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="158.0" prefWidth="1200.0" style="-fx-background-color: #1B75BB;">
+         <children>
+            <Pane opacity="0.5" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: gray;" />
+         </children></Pane>
+      <Pane layoutX="41.0" layoutY="189.0" prefHeight="672.0" prefWidth="1119.0" style="-fx-background-color: #28A7EA;" visible="false">
+         <children>
+            <Separator layoutX="30.0" layoutY="98.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Separator layoutX="30.0" layoutY="566.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Label layoutX="42.0" layoutY="18.0" text="¿Quienes viajan?" textFill="WHITE">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Button layoutX="1019.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <ScrollPane layoutX="59.0" layoutY="124.0" prefHeight="425.0" prefWidth="999.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="982.0">
+                     <children>
+                        <Pane layoutX="52.0" layoutY="34.0" prefHeight="297.0" prefWidth="875.0" styleClass="pane-info-persona">
+                           <children>
+                              <Label layoutX="20.0" layoutY="8.0" text="Persona 1" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="69.0" text="Nombre completo:" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="121.0" text="Tipo documento:" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="128.0" layoutY="236.0" text="Sexo:" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="207.0" layoutY="69.0" prefHeight="31.0" prefWidth="628.0" />
+                              <TextField layoutX="206.0" layoutY="121.0" prefHeight="31.0" prefWidth="209.0" />
+                              <TextField layoutX="205.0" layoutY="236.0" prefHeight="31.0" prefWidth="210.0" />
+                              <TextField layoutX="623.0" layoutY="237.0" prefHeight="31.0" prefWidth="209.0" />
+                              <Label layoutX="555.0" layoutY="237.0" text="Edad:" textFill="#f5f5f5">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="625.0" layoutY="121.0" prefHeight="31.0" prefWidth="209.0" />
+                              <Label layoutX="496.0" layoutY="121.0" text="Documento:" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="446.0" layoutY="175.0" text="Ciudad residencia:" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="625.0" layoutY="175.0" prefHeight="31.0" prefWidth="209.0" />
+                              <TextField layoutX="206.0" layoutY="175.0" prefHeight="31.0" prefWidth="209.0" />
+                              <Label layoutX="41.0" layoutY="175.0" text="Pais residencia:" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <HBox alignment="BOTTOM_CENTER" layoutX="500.0" layoutY="596.0" nodeOrientation="LEFT_TO_RIGHT" spacing="20.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="512.0" layoutY="615.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="553.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="602.0" layoutY="616.0" radius="19.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="648.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Button layoutX="709.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text=" Continuar      -----&gt;" />
+         </children>
+      </Pane>
+      <Pane layoutX="41.0" layoutY="189.0" prefHeight="672.0" prefWidth="1119.0" style="-fx-background-color: #28A7EA;" visible="false">
+         <children>
+            <HBox layoutX="636.0" layoutY="596.0" />
+            <Pane layoutX="65.0" layoutY="162.0" prefHeight="392.0" prefWidth="703.0" styleClass="img-asientos-avion">
+               <children>
+                  <GridPane alignment="CENTER" layoutX="29.0" layoutY="25.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="9.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="51.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="2" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="3" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="4" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="5" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="6" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="7" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="8" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="9" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="10" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="1" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane alignment="CENTER" layoutX="408.0" layoutY="61.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="1" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="2" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="3" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="4" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="5" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="6" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="7" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.rowIndex="8" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <CheckBox mnemonicParsing="false" prefHeight="31.0" prefWidth="9.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="9.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="51.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children></Pane>
+            <Pane layoutX="814.0" layoutY="255.0" prefHeight="260.0" prefWidth="222.0" styleClass="pane-info-asiento">
+               <children>
+                  <VBox layoutX="21.0" layoutY="49.0" spacing="20.0">
+                     <children>
+                        <Pane layoutX="21.0" layoutY="49.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: green;" />
+                        <Pane layoutX="31.0" layoutY="59.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: red;" />
+                        <Pane layoutX="51.0" layoutY="79.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: blue;" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="94.0" layoutY="59.0" spacing="42.0">
+                     <children>
+                        <Label layoutX="94.0" layoutY="61.0" text="Disponible" />
+                        <Label layoutX="94.0" layoutY="122.0" text="Ocupado" />
+                        <Label layoutX="98.0" layoutY="183.0" text="Seleccionado" />
+                     </children>
+                  </VBox>
+               </children></Pane>
+            <Separator layoutX="30.0" layoutY="98.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Separator layoutX="30.0" layoutY="566.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Label layoutX="42.0" layoutY="18.0" text="Eleccion de asientos" textFill="WHITE">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="121.0" text="Aeronave:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="330.0" layoutY="121.0" text="Puestos comprados:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="815.0" layoutY="125.0" text="Clase ejecutiva:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="815.0" layoutY="176.0" text="Clase economica:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="215.0" layoutY="121.0" text="AirBus845" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="524.0" layoutY="121.0" text="5" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Pane layoutX="973.0" layoutY="119.0" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: #7F7F7F; -fx-border-color: white;" />
+            <Pane layoutX="974.0" layoutY="171.0" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: #C0C0C0; -fx-border-color: white;" />
+            <Button layoutX="1019.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button layoutX="709.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text=" Continuar      -----&gt;" />
+            <HBox alignment="BOTTOM_CENTER" layoutX="507.0" layoutY="597.0" nodeOrientation="LEFT_TO_RIGHT" spacing="20.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="512.0" layoutY="615.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="553.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="602.0" layoutY="616.0" radius="19.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="648.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Button layoutX="257.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text="&lt;-----     Anterior" />
+         </children>
+      </Pane>
+      <Pane layoutX="41.0" layoutY="189.0" prefHeight="672.0" prefWidth="1119.0" style="-fx-background-color: #28A7EA;">
+         <children>
+            <Button layoutX="709.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text=" Continuar      -----&gt;" />
+            <HBox alignment="BOTTOM_CENTER" layoutX="500.0" layoutY="596.0" nodeOrientation="LEFT_TO_RIGHT" spacing="20.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="512.0" layoutY="615.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="553.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="602.0" layoutY="616.0" radius="19.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="648.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Separator layoutX="30.0" layoutY="98.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Separator layoutX="30.0" layoutY="566.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Label layoutX="42.0" layoutY="18.0" text="Gestion de equipaje" textFill="WHITE">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Button layoutX="1019.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <ScrollPane layoutX="59.0" layoutY="124.0" prefHeight="425.0" prefWidth="628.0" styleClass="pane-mascota">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="608.0" styleClass="pane-mascota">
+                     <children>
+                        <Pane layoutX="52.0" layoutY="34.0" prefHeight="297.0" prefWidth="510.0" styleClass="pane-info-persona">
+                           <children>
+                              <Label layoutX="20.0" layoutY="8.0" text="Equipaje 1" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <VBox layoutX="117.0" layoutY="69.0" spacing="25.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="69.0" text="Peso:" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="23.0" layoutY="121.0" text="Alto:" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="41.0" layoutY="175.0" text="Largo:" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="128.0" layoutY="236.0" text="Ancho:" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="192.0" layoutY="69.0" spacing="25.0">
+                                 <children>
+                                    <TextField layoutX="207.0" layoutY="69.0" prefHeight="31.0" prefWidth="206.0" />
+                                    <TextField layoutX="206.0" layoutY="121.0" prefHeight="31.0" prefWidth="209.0" />
+                                    <TextField layoutX="206.0" layoutY="175.0" prefHeight="31.0" prefWidth="209.0" />
+                                    <TextField layoutX="205.0" layoutY="236.0" prefHeight="31.0" prefWidth="210.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Pane layoutX="744.0" layoutY="195.0" prefHeight="240.0" prefWidth="300.0" styleClass="pane-mascota">
+               <children>
+                  <Label layoutX="20.0" layoutY="8.0" text="Mascota?" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="69.0" layoutY="60.0" spacing="40.0">
+                     <children>
+                        <RadioButton layoutX="33.0" layoutY="78.0" mnemonicParsing="false" text="Si" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton layoutX="138.0" layoutY="68.0" mnemonicParsing="false" text="No" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <Separator layoutX="24.0" layoutY="103.0" prefHeight="3.0" prefWidth="245.0" />
+                  <Label layoutX="37.0" layoutY="149.0" text="Peso:" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="99.0" layoutY="149.0" prefHeight="31.0" prefWidth="155.0" />
+               </children>
+            </Pane>
+            <Button layoutX="257.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text="&lt;-----     Anterior" />
+         </children>
+      </Pane>
+      <Pane layoutX="41.0" layoutY="189.0" prefHeight="672.0" prefWidth="1119.0" style="-fx-background-color: #28A7EA;" visible="false">
+         <children>
+            <Button layoutX="709.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text=" Comprar" />
+            <HBox alignment="BOTTOM_CENTER" layoutX="503.0" layoutY="596.0" nodeOrientation="LEFT_TO_RIGHT" spacing="20.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="512.0" layoutY="615.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="553.0" layoutY="616.0" radius="12.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="602.0" layoutY="616.0" radius="13.0" stroke="#1b75bb" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="648.0" layoutY="616.0" radius="19.0" stroke="#1b75bb" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Separator layoutX="30.0" layoutY="98.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Separator layoutX="30.0" layoutY="566.0" prefHeight="0.0" prefWidth="1047.0" />
+            <Label layoutX="42.0" layoutY="18.0" text="Gestion de equipaje" textFill="WHITE">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Button layoutX="1019.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Pane layoutX="718.0" layoutY="118.0" prefHeight="425.0" prefWidth="349.0" styleClass="pane-mascota">
+               <children>
+                  <Label layoutX="61.0" layoutY="8.0" text="Informacion compra" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="13.0" layoutY="95.0" nodeOrientation="RIGHT_TO_LEFT" spacing="20.0">
+                     <children>
+                        <Label layoutX="25.0" layoutY="165.0" text="Clase de servicio:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="213.0" text="Precio por asiento:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="257.0" text="Asientos:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="351.0" text="Destino:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Salida:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator layoutX="25.0" layoutY="58.0" prefHeight="3.0" prefWidth="300.0" />
+                  <Label layoutX="197.0" layoutY="97.0" text="ejecutiva" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="200.0" layoutY="148.0" text="12000" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="200.0" layoutY="195.0" text="A1-C1" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="202.0" layoutY="243.0" text="Armeni" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="202.0" layoutY="295.0" text="Pereira" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="349.0" text="Total a pagar:" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="202.0" layoutY="349.0" text="188000" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="257.0" layoutY="592.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" styleClass="btn-tiquete" text="&lt;-----     Anterior" />
+            <Label layoutX="55.0" layoutY="154.0" text="Tipo de targeta:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="376.0" layoutY="158.0" text="Targeta:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="55.0" layoutY="192.0" prefHeight="38.0" prefWidth="266.0" style="-fx-background-color: white;" />
+            <ComboBox layoutX="376.0" layoutY="188.0" prefHeight="38.0" prefWidth="266.0" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+      <Pane layoutX="305.0" layoutY="96.0" prefHeight="764.0" prefWidth="640.0" style="-fx-background-color: #28A7EA; -fx-background-radius: 10;" visible="false">
+         <children>
+            <Pane layoutX="33.0" layoutY="117.0" prefHeight="205.0" prefWidth="573.0" styleClass="pane-mascota">
+               <children>
+                  <VBox layoutX="33.0" layoutY="65.0" spacing="35.0">
+                     <children>
+                        <Label layoutX="77.0" layoutY="180.0" text="Cliente" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="87.0" layoutY="190.0" text="Correo" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="168.0" layoutY="11.0" text="Informacion cliente" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="33.0" layoutY="47.0" prefHeight="3.0" prefWidth="506.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="348.0" prefHeight="323.0" prefWidth="573.0" styleClass="pane-mascota">
+               <children>
+                  <VBox layoutX="33.0" layoutY="76.0" spacing="35.0">
+                     <children>
+                        <Label layoutX="77.0" layoutY="180.0" text="Destino" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Fecha y hora salida:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Asientos:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valor total:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="165.0" layoutY="13.0" text="Informacion compra" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="271.0" layoutY="74.0" text="Salida" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="34.0" layoutY="48.0" prefHeight="3.0" prefWidth="506.0" />
+                  <Label layoutX="271.0" layoutY="141.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="210.0" layoutY="693.0" mnemonicParsing="false" styleClass="btn-tiquete" text="Finalizar" />
+            <Label layoutX="262.0" layoutY="31.0" text="Tiquete" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

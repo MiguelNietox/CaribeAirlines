@@ -20,4 +20,26 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/asientosAvion.png</name>
+			<type>1</type>
+			<location>C:/Users/Universidad/Desktop/UQ/2022-1/Estructura de Datos I/ProyectoFinal/workSpace/co.edu.uniquindio.estructurasDatos.ProyectoFinal/src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/asientosAvion.png</location>
+		</link>
+		<link>
+			<name>src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/carrito.png</name>
+			<type>1</type>
+			<location>C:/Users/Universidad/Desktop/UQ/2022-1/Estructura de Datos I/ProyectoFinal/workSpace/co.edu.uniquindio.estructurasDatos.ProyectoFinal/src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/carrito.png</location>
+		</link>
+		<link>
+			<name>src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/enbarqueAvion.png</name>
+			<type>1</type>
+			<location>C:/Users/Universidad/Desktop/UQ/2022-1/Estructura de Datos I/ProyectoFinal/workSpace/co.edu.uniquindio.estructurasDatos.ProyectoFinal/src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/enbarqueAvion.png</location>
+		</link>
+		<link>
+			<name>src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/equipajeAvion.png</name>
+			<type>1</type>
+			<location>C:/Users/Universidad/Desktop/UQ/2022-1/Estructura de Datos I/ProyectoFinal/workSpace/co.edu.uniquindio.estructurasDatos.ProyectoFinal/src/co/edu/uniquindio/estructurasDatos/ProyectoFinal/images/equipajeAvion.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

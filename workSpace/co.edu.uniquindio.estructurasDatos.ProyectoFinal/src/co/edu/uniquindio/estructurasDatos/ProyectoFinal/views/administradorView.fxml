@@ -1,10 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.AdministradorViewController">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.AdministradorViewController">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="900.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="tab-admin" text="Gestion de vuelos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5358796296296297" orientation="VERTICAL" prefHeight="866.0" prefWidth="1200.0">
+                          <items>
+                            <AnchorPane fx:id="anchor" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #28A7EA;">
+                                 <children>
+                                    <Separator layoutX="14.0" layoutY="44.0" prefHeight="0.0" prefWidth="1160.0" />
+                                    <Separator layoutX="24.0" layoutY="373.0" prefHeight="0.0" prefWidth="1146.0" />
+                                    <HBox layoutX="367.0" layoutY="397.0" spacing="20.0">
+                                       <children>
+                                          <Button layoutX="760.0" layoutY="386.0" mnemonicParsing="false" styleClass="btn-admin" text="Nuevo" />
+                                          <Button layoutX="770.0" layoutY="396.0" mnemonicParsing="false" styleClass="btn-admin" text="Actualizar" />
+                                          <Button layoutX="790.0" layoutY="416.0" mnemonicParsing="false" styleClass="btn-admin" text="Agregar" />
+                                       </children>
+                                    </HBox>
+                                    <Label layoutX="33.0" layoutY="6.0" text="INFORMACION VUELO" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font></Label>
+                                    <Pane layoutX="73.0" layoutY="70.0" prefHeight="279.0" prefWidth="489.0" styleClass="pane-info">
+                                       <children>
+                                          <VBox layoutX="203.0" layoutY="78.0" prefHeight="82.0" prefWidth="212.0" spacing="20.0">
+                                             <children>
+                                                <ComboBox fx:id="comboRutaVuelo" layoutX="164.0" layoutY="89.0" onAction="#rutaVueloAction" prefHeight="31.0" prefWidth="235.0" />
+                                                <ComboBox layoutX="153.0" layoutY="134.0" prefHeight="31.0" prefWidth="229.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="22.0" layoutY="78.0" spacing="30.0">
+                                             <children>
+                                                <Label layoutX="36.0" layoutY="79.0" text="Ruta de vuelo:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="19.0" />
+                                                   </font></Label>
+                                                <Label layoutX="36.0" layoutY="219.0" text="Aeronave" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="19.0" />
+                                                   </font></Label>
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="154.0" layoutY="14.0" text="Aeronave y ruta" textFill="WHITE">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font></Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="634.0" layoutY="70.0" prefHeight="279.0" prefWidth="485.0" styleClass="pane-info">
+                                       <children>
+                                          <VBox layoutX="152.0" layoutY="65.0" prefHeight="86.0" prefWidth="245.0" spacing="20.0">
+                                             <children>
+                                                <ComboBox layoutX="718.0" layoutY="74.0" prefHeight="31.0" prefWidth="258.0" />
+                                                <ComboBox layoutX="712.0" layoutY="118.0" prefHeight="31.0" prefWidth="268.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="58.0" layoutY="68.0" spacing="20.0">
+                                             <children>
+                                                <Label layoutX="494.0" layoutY="100.0" text="Piloto:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="19.0" />
+                                                   </font></Label>
+                                                <Label layoutX="491.0" layoutY="119.0" text="Copiloto:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="19.0" />
+                                                   </font></Label>
+                                             </children>
+                                          </VBox>
+                                          <ScrollPane layoutX="28.0" layoutY="163.0" prefHeight="111.0" prefWidth="435.0" styleClass="pane-aux">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="423.0" styleClass="pane-aux">
+                                                   <children>
+                                                      <VBox layoutX="33.0" layoutY="15.0" spacing="25.0">
+                                                         <children>
+                                                            <Label layoutX="33.0" layoutY="15.0" text="Auxiliar 1:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="43.0" layoutY="25.0" text="Auxiliar 2:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="53.0" layoutY="35.0" text="Auxiliar 3:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="63.0" layoutY="45.0" text="Auxiliar 4:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="73.0" layoutY="55.0" text="Auxiliar 5:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="83.0" layoutY="65.0" text="Auxiliar 6:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="93.0" layoutY="75.0" text="Auxiliar 7:" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font></Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox layoutX="123.0" layoutY="11.0" prefHeight="367.0" prefWidth="243.0" spacing="25.0">
+                                                         <children>
+                                                            <ComboBox layoutX="123.0" layoutY="11.0" prefHeight="31.0" prefWidth="245.0" />
+                                                            <ComboBox layoutX="133.0" layoutY="21.0" prefHeight="31.0" prefWidth="244.0" />
+                                                            <ComboBox layoutX="143.0" layoutY="31.0" prefWidth="244.0" />
+                                                            <ComboBox layoutX="153.0" layoutY="41.0" prefWidth="244.0" />
+                                                            <ComboBox layoutX="163.0" layoutY="51.0" prefWidth="244.0" />
+                                                            <ComboBox layoutX="173.0" layoutY="61.0" prefWidth="244.0" />
+                                                            <ComboBox layoutX="183.0" layoutY="71.0" prefWidth="244.0" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                          <Label layoutX="196.0" layoutY="14.0" text="Tripulacion" textFill="WHITE">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font></Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #28A7EA;">
+                                 <children>
+                                    <Separator layoutX="20.0" layoutY="51.0" prefHeight="0.0" prefWidth="1144.0" />
+                                    <Separator layoutX="23.0" layoutY="320.0" prefHeight="0.0" prefWidth="1141.0" />
+                                    <TableView layoutX="39.0" layoutY="80.0" prefHeight="219.0" prefWidth="1100.0">
+                                      <columns>
+                                        <TableColumn prefWidth="131.0" text="Aeronave" />
+                                        <TableColumn prefWidth="155.0" text="Salida" />
+                                          <TableColumn prefWidth="177.0" text="Destino" />
+                                          <TableColumn prefWidth="158.0" text="Piloto" />
+                                          <TableColumn prefWidth="172.0" text="Copiloto" />
+                                          <TableColumn prefWidth="148.0" text="Numero asientos" />
+                                          <TableColumn prefWidth="158.0" text="Hora de salida" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="980.0" layoutY="335.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="103.0" styleClass="btn-admin" text="Eliminar" />
+                                    <Label layoutX="33.0" layoutY="11.0" text="LISTADO DE VUELOS" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font></Label>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab styleClass="tab-admin" text="Gestion embarque">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.6510851419031719" prefHeight="863.0" prefWidth="1200.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="712.0" prefWidth="627.0" style="-fx-background-color: #28A7EA;">
+                                 <children>
+                                    <TabPane layoutY="50.0" prefHeight="810.0" prefWidth="776.0" tabClosingPolicy="UNAVAILABLE">
+                                      <tabs>
+                                        <Tab styleClass="tab-admin" text="Vista  equipaje">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Pane layoutX="-2.0" layoutY="1.0" prefHeight="770.0" prefWidth="778.0" styleClass="fondo-equipaje">
+                                                         <children>
+                                                            <Label layoutX="552.0" layoutY="61.0" text="Embarque">
+                                                               <font>
+                                                                  <Font size="21.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="564.0" layoutY="89.0" text="Equipaje">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="651.0" layoutY="82.0" text="--&gt;" />
+                                                            <Label layoutX="78.0" layoutY="695.0" text="Sala de equipaje">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ImageView fitHeight="135.0" fitWidth="114.0" layoutX="67.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                                                               <image>
+                                                                  <Image url="@../images/carrito.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <ImageView fitHeight="135.0" fitWidth="114.0" layoutX="325.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                                                               <image>
+                                                                  <Image url="@../images/carrito.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Pane layoutX="347.0" layoutY="245.0" prefHeight="26.0" prefWidth="21.0" style="-fx-background-color: red;" />
+                                                            <Pane layoutX="68.0" layoutY="349.0" prefHeight="26.0" prefWidth="21.0" style="-fx-background-color: red;" />
+                                                            <Pane layoutX="124.0" layoutY="349.0" prefHeight="26.0" prefWidth="21.0" style="-fx-background-color: red;" />
+                                                            <Pane layoutX="194.0" layoutY="349.0" prefHeight="26.0" prefWidth="21.0" style="-fx-background-color: red;" />
+                                                            <Pane layoutX="89.0" layoutY="410.0" prefHeight="26.0" prefWidth="21.0" style="-fx-background-color: red;" />
+                                                            <Pane layoutX="171.0" layoutY="410.0" prefHeight="26.0" prefWidth="21.0" style="-fx-background-color: red;" />
+                                                         </children>
+                                                      </Pane>
+                                                   </children></AnchorPane>
+                                          </content>
+                                        </Tab>
+                                        <Tab styleClass="tab-admin" text="Vista embarque">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="776.0" prefWidth="778.0" styleClass="fondo-embarque">
+                                                         <children>
+                                                            <ImageView fitHeight="458.0" fitWidth="413.0" layoutX="377.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../../../../../../../../../../../../Downloads/pngwing.com%20(3).png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <ImageView fitHeight="135.0" fitWidth="114.0" layoutX="310.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                                                               <image>
+                                                                  <Image url="@../images/carrito.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <ImageView fitHeight="135.0" fitWidth="114.0" layoutX="287.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                                                               <image>
+                                                                  <Image url="@../images/carrito.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <ImageView fitHeight="135.0" fitWidth="114.0" layoutX="604.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                                                               <image>
+                                                                  <Image url="@../images/carrito.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Pane layoutX="67.0" layoutY="215.0" prefHeight="89.0" prefWidth="118.0" rotate="-180.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="135.0" fitWidth="114.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../images/carrito.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Pane layoutX="72.0" layoutY="37.0" prefHeight="24.0" prefWidth="23.0" style="-fx-background-color: red;" />
+                                                               </children>
+                                                            </Pane>
+                                                            <Label layoutX="113.0" layoutY="17.0" text="Capacidad de carga: ">
+                                                               <font>
+                                                                  <Font size="25.0" />
+                                                               </font></Label>
+                                                            <Label layoutX="131.0" layoutY="67.0" text="000000 /">
+                                                               <font>
+                                                                  <Font size="25.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="231.0" layoutY="67.0" text="000000">
+                                                               <font>
+                                                                  <Font size="25.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Pane layoutX="332.0" layoutY="342.0" prefHeight="24.0" prefWidth="23.0" style="-fx-background-color: red;" />
+                                                            <Pane layoutX="331.0" layoutY="621.0" prefHeight="24.0" prefWidth="23.0" style="-fx-background-color: red;" />
+                                                         </children>
+                                                      </Pane>
+                                                   </children></AnchorPane>
+                                          </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #28A7EA;">
+                                 <children>
+                                    <TableView layoutX="24.0" layoutY="45.0" prefHeight="705.0" prefWidth="369.0">
+                                      <columns>
+                                        <TableColumn prefWidth="105.0" text="Avion" />
+                                        <TableColumn prefWidth="117.0" text="Destino" />
+                                          <TableColumn prefWidth="146.0" text="Hora salida" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="110.0" layoutY="785.0" mnemonicParsing="false" styleClass="btn-embarque" text="Embarcar avion" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab styleClass="tab-admin" text="Vista vuelos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>

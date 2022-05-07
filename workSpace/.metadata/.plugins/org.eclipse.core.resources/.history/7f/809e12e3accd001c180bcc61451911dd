@@ -1,0 +1,23 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.model;
+
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.librerias.ListaSimple;
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.librerias.Nodo;
+
+public class Aerolinea {
+
+	ListaSimple<Usuario> listaUsuarios = new ListaSimple<Usuario>();
+
+	public Usuario obtenerUsuario(String nombreUsuario) {
+
+		Usuario usuario = null;
+
+		Nodo<Usuario> aux = listaUsuarios.getNodoPrimero();
+        while(aux.getSiguienteNodo() != null){
+        	if(aux.getValorNodo().getNombreUsuario().equals(nombreUsuario)){
+        		usuario =  aux.getValorNodo();
+        	}
+            aux = aux.getSiguienteNodo();
+        }
+        return usuario;
+	}
+}

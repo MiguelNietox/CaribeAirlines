@@ -1,10 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.ClienteViewController">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.ClienteViewController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="762.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" hmax="100.0" layoutY="102.0" prefHeight="799.0" prefWidth="769.0" styleClass="list-viajes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="723.0" styleClass="list-viajes">
+                     <children>
+                        <Pane layoutX="43.0" layoutY="37.0" prefHeight="200.0" prefWidth="671.0" styleClass="pane-viaje">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="201.0" layoutX="27.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../../../../../../Pictures/picture-2008484_960_720.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="216.0" layoutY="15.0" text="NOMBRE DE DESTINO" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="201.0" layoutY="10.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="6.0" />
+                              <Button fx:id="btnInfoViaje" layoutX="433.0" layoutY="140.0" mnemonicParsing="false" onAction="#infoViajeAction" prefHeight="39.0" prefWidth="222.0" styleClass="btn-targeta" text="Ver mas informacion " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="216.0" layoutY="65.0" text="00000.0" textFill="#f2f2f2">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="216.0" layoutY="130.0" text="Desde: nombre" textFill="#fcfcfc" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="38.0" layoutY="263.0" prefHeight="200.0" prefWidth="671.0" styleClass="pane-viaje">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="201.0" layoutX="27.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../../../../../../Pictures/picture-2008484_960_720.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="216.0" layoutY="15.0" text="NOMBRE DE DESTINO" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="201.0" layoutY="10.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="6.0" />
+                              <Button layoutX="433.0" layoutY="140.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="222.0" styleClass="btn-targeta" text="Ver mas informacion " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="216.0" layoutY="65.0" text="00000.0" textFill="#f2f2f2">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="216.0" layoutY="130.0" text="Desde: nombre" textFill="#fcfcfc" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="38.0" layoutY="484.0" prefHeight="200.0" prefWidth="671.0" styleClass="pane-viaje">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="201.0" layoutX="27.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../../../../../../Pictures/picture-2008484_960_720.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="216.0" layoutY="15.0" text="NOMBRE DE DESTINO" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="201.0" layoutY="10.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="6.0" />
+                              <Button layoutX="433.0" layoutY="140.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="222.0" styleClass="btn-targeta" text="Ver mas informacion " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="216.0" layoutY="65.0" text="00000.0" textFill="#f2f2f2">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="216.0" layoutY="130.0" text="Desde: nombre" textFill="#fcfcfc" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="38.0" layoutY="707.0" prefHeight="200.0" prefWidth="671.0" styleClass="pane-viaje">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="201.0" layoutX="27.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../../../../../../Pictures/picture-2008484_960_720.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="216.0" layoutY="15.0" text="NOMBRE DE DESTINO" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="201.0" layoutY="10.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="6.0" />
+                              <Button layoutX="433.0" layoutY="140.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="222.0" styleClass="btn-targeta" text="Ver mas informacion " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="216.0" layoutY="65.0" text="00000.0" textFill="#f2f2f2">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="216.0" layoutY="130.0" text="Desde: nombre" textFill="#fcfcfc" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Pane prefHeight="104.0" prefWidth="769.0" style="-fx-background-color: #1B75BB;">
+               <children>
+                  <Text fill="WHITE" layoutX="135.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARIBE AIRLINES" wrappingWidth="499.6708984375">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+    <AnchorPane layoutX="778.0" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="419.0">
+         <children>
+            <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="104.0" prefWidth="423.0" style="-fx-background-color: #1B75BB;">
+               <children>
+                  <VBox layoutX="26.0" layoutY="14.0" spacing="10.0">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="21.0" prefWidth="77.0" text="Usuario:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="52.0" text="Correo:" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="121.0" layoutY="54.0" text="usuario@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="17.0" text="usuario1" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Text fill="#1b75bb" layoutX="165.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTRO" wrappingWidth="106.6708984375">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Separator layoutX="24.0" layoutY="164.0" prefHeight="1.0" prefWidth="376.0" style="-fx-background-color: #1B75BB;" />
+            <Separator layoutX="23.0" layoutY="806.0" prefHeight="1.0" prefWidth="376.0" style="-fx-background-color: #1B75BB;" />
+            <Button layoutX="107.0" layoutY="824.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="107.0" styleClass="btn-filtro" text="Filtrar" />
+            <CheckBox layoutX="34.0" layoutY="179.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="148.0" style="-fx-text-fill: #1b75bb;" text="Viaje de ida">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="181.0" layoutY="179.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="216.0" style="-fx-text-fill: #1b75bb;" text="Viaje de ida y vuelta">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </CheckBox>
+            <TextField layoutX="139.0" layoutY="260.0" prefHeight="37.0" prefWidth="248.0" />
+            <TextField layoutX="139.0" layoutY="324.0" prefHeight="37.0" prefWidth="248.0" />
+            <DatePicker editable="false" layoutX="205.0" layoutY="413.0" prefHeight="37.0" prefWidth="182.0" />
+            <DatePicker editable="false" layoutX="205.0" layoutY="472.0" prefHeight="37.0" prefWidth="182.0" />
+            <ComboBox layoutX="203.0" layoutY="563.0" prefHeight="37.0" prefWidth="182.0" />
+            <Label layoutX="39.0" layoutY="268.0" styleClass="text-filtro" text="Salida:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="332.0" styleClass="text-filtro" text="Destino:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="474.0" styleClass="text-filtro" text="Fecha de regreso:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="415.0" styleClass="text-filtro" text="Fecha de salida:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="568.0" styleClass="text-filtro" text="Tipo de servicio:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="628.0" styleClass="text-filtro" text="No de asientos:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField layoutX="203.0" layoutY="627.0" prefHeight="42.0" prefWidth="87.0" />
+            <Button layoutX="297.0" layoutY="619.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="20.0" rotate="-90.0" text="&gt;">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="297.0" layoutY="640.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="20.0" rotate="90.0" text="&gt;">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="769.0" orientation="VERTICAL" prefHeight="900.0" prefWidth="11.0" style="-fx-background-color: #AFB8BC;" />
+      <Pane fx:id="panePantallaGris" opacity="0.8" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: gray;" visible="false" />
+      <Pane fx:id="paneInfoViaje" layoutX="370.0" layoutY="138.0" prefHeight="728.0" prefWidth="493.0" styleClass="pane-viaje" visible="false">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="219.0" layoutX="143.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../../../../../Pictures/picture-2008484_960_720.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="257.0" text="NOMBRE DEL DESTINO" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button layoutX="129.0" layoutY="670.0" mnemonicParsing="false" styleClass="btn-targeta" text="Comprar tiquetes" />
+            <Button layoutX="440.0" layoutY="-3.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Pane layoutX="33.0" layoutY="392.0" prefHeight="249.0" prefWidth="439.0" styleClass="pane-info">
+               <children>
+                  <VBox layoutX="84.0" layoutY="34.0" spacing="15.0">
+                     <children>
+                        <Label layoutX="54.0" layoutY="366.0" text="Precio:" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="408.0" text="Salida:" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="448.0" text="Horarios:" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="180.0" layoutY="35.0" spacing="15.0">
+                     <children>
+                        <Label layoutX="169.0" layoutY="366.0" text="0000.00" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="169.0" layoutY="408.0" text="Lugar de salida" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="169.0" layoutY="448.0" text="18:00    -     22:00" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="215.0" layoutY="184.0" text="2 horas y 30 minutos" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="184.0" text="Duracion de vuelo:" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="33.0" layoutY="337.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="223.0" styleClass="btn-ida" text="IDA" />
+            <Button layoutX="250.0" layoutY="337.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="223.0" styleClass="btn-vuelta" text="VUELTA" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

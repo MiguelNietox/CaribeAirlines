@@ -2,13 +2,11 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javafx.application.Application"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
-<fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
 <fullyQualifiedTypeName name="javafx.stage.Stage"/>
 <fullyQualifiedTypeName name="javafx.scene.Scene"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
-<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="javafx.animation.FadeTransition"/>
 <fullyQualifiedTypeName name="javafx.animation.TranslateTransition"/>
 <fullyQualifiedTypeName name="javafx.util.Duration"/>
@@ -16,4 +14,21 @@
 <fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.ClienteViewController"/>
 <fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.AdministradorViewController"/>
 <fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.aplication.Aplicacion"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
+<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+<fullyQualifiedTypeName name="java.awt.Label"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
+<fullyQualifiedTypeName name="java.awt.TextField"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.persistencia.Persistencia"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers.LoginController"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.librerias.ListaSimple"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.excepciones.UsuarioException"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.model.Usuario"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="co.edu.uniquindio.estructurasDatos.ProyectoFinal.model.Aerolinea"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
 </qualifiedTypeNameHistroy>

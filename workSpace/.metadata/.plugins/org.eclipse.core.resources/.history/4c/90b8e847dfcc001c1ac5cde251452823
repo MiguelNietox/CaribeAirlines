@@ -1,0 +1,10 @@
+.check-box{
+	-fx-border-style: solid none solid solid;
+    -fx-border-width: 1px, 0px, 1px, 5px;
+    -fx-border-color: red;
+    -fx-background-color:red;
+}
+
+.img-asientos-avion{
+	-fx-background-image: url(" ../images/asientosAvion.png")
+}

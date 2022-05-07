@@ -1,0 +1,7 @@
+.fondo-equipaje{
+	-fx-background-image: url("../images/equipajeAvion.png");
+}
+
+.fondo-embarque{
+	-fx-background-image: url("../images/embarqueAvion.png");
+}

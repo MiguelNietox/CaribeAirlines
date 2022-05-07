@@ -1,0 +1,44 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers;
+
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.aplication.Aplicacion;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+
+public class AdministradorViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private ComboBox<String> comboRutaVuelo;
+
+    @FXML
+    void rutaVueloAction(ActionEvent event) {
+    	System.out.println("Hola");
+    }
+	private ArrayList<String> rutas = new ArrayList<String>();
+
+    @FXML
+    void initialize() {
+
+
+
+
+    }
+	public void setAplicacion(Aplicacion aplicacion) {
+
+		Collections.addAll(rutas,new String[]{"Cedula","Pasaporte","Cedula extrangera"});
+        comboRutaVuelo.getItems().addAll(rutas);
+
+	}
+
+}

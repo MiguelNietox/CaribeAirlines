@@ -1,0 +1,37 @@
+package co.edu.uniquindio.estructurasDatos.ProyectoFinal.controllers;
+
+import co.edu.uniquindio.estructurasDatos.ProyectoFinal.aplication.Aplicacion;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+
+public class AdministradorViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private ComboBox<?> comboRutaVuelo;
+
+    @FXML
+    void rutaVueloAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize() {
+        assert comboRutaVuelo != null : "fx:id=\"comboRutaVuelo\" was not injected: check your FXML file 'administradorView.fxml'.";
+
+    }
+	public void setAplicacion(Aplicacion aplicacion) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

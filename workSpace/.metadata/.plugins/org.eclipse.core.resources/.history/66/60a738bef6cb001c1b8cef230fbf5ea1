@@ -1,0 +1,3 @@
+.fondo-equipaje{
+	-fx-background-color:blue;
+}

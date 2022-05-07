@@ -1,0 +1,8 @@
+.fondo-cliente{
+	-fx-background-color:#28A7EA;
+	-fx-background-image:url(../images/Caribe.png);
+}
+
+.list-viajes{
+	-fx-effect: dropshadow(gaussian, white, 2px, 0, 0, 0);
+}
